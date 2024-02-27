@@ -1,0 +1,97 @@
+.container{
+    background-color: brown;
+    height: 100vh;
+    padding: 10rem;
+    
+}
+
+.navigation-container{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(181, 144, 98);
+    padding: 5px;
+    display: flex;
+}
+.navigation-child:nth-child(1) {
+background-color: aqua;
+width: 30%;
+height: 100%;
+}
+.navigation-child:nth-child(2) {
+    background-color: rgb(255, 0, 247);
+    width: 70%;
+    height: 100%;
+    }
+
+    .navigation-child:nth-child(2) ul{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0.5rem;
+        list-style-type: none;
+    }
+
+    .flex-row{
+        display: flex;
+        height: 30vh;
+        background-color: blueviolet;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .column-2{
+        margin: 5px;
+        width:50% ;
+        height: 96%;
+        background-color: rgb(87, 142, 98);
+    }
+
+    .column-4{
+        margin: 5px;
+        width: 25%;
+        height: 96%;
+        background-color: rgb(181, 147, 95);
+    }
+
+    .column-3{
+        margin: 5px;
+        width:33% ;
+        height: 96%;
+        background-color: rgb(115, 81, 121);
+    }
+.flex-row.high{
+background-color: rgb(15, 230, 18);
+height: 40vh;
+}
+
+.flex-row.high > .column-3 {
+background-color: rgb(16, 10, 1);
+
+}
+
+@media(max-width: 780px)
+{
+    .container{
+        padding: 2rem;
+    }   
+
+}
+@media(max-width: 550px)
+{
+    .navigation-container{
+        flex-direction: column;
+        height: 140px;
+    }
+    .container{
+        padding: 0;
+    }
+    .navigation-container .navigation-child{
+        width: 97%;
+    }
+    .flex-row{
+        flex-direction: column;
+       
+    }
+    .column-2, .column-3, .column-4{
+    width: 97%;
+}
+}
